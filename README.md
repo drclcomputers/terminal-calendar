@@ -1,4 +1,4 @@
-# calendar
+# Terminal-Calendar
 This is a terminal-based calendar. 
 
 Download:
