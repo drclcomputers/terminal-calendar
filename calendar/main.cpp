@@ -110,7 +110,19 @@ int main(int argc, char* argv[]) {
 		firstday -= 1;
 		print_cal();
 	}
+	else if (argc == 2) {
+		cout << "Enter year, too!";
+		return 0;
+	}
 	else {
+		if (atoi(argv[1]) < 1 || atoi(argv[1]) > 12) {
+			cout << "Enter month between 1 and 12!";
+			return 0;
+		}
+		if (atoi(argv[2]) < 1 || atoi(argv[2]) > 5000) {
+			cout << "Enter year between 1 and 5000!";
+			return 0;
+		}
 		int firstday = get_firstday(atoi(argv[1]), atoi(argv[2]));
 		if (firstday == 0 || firstday == 1) firstday += 7;
 		firstday -= 1;
