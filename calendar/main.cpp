@@ -3,6 +3,7 @@
 #include<iostream>
 #include<cmath>
 #include<iomanip>
+#include<cstring>
 #include<ctime>
 
 using namespace std;
@@ -128,5 +129,6 @@ int main(int argc, char* argv[]) {
 		firstday -= 1;
 		print_cal(atoi(argv[1]), atoi(argv[2]), firstday);
 	}
+	cout<<'\n';
 	return 0;
 }
